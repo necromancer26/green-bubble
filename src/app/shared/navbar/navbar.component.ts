@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit, ElementRef } from '@angular/core';
 declare var $: any;
 
 @Component({
@@ -6,7 +6,8 @@ declare var $: any;
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.sass']
 })
-export class NavbarComponent {
+export class NavbarComponent implements OnInit{
+  
   ngOnInit(){
         /*--- VSticker ----*/
         $("#news-flash").vTicker({

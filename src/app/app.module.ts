@@ -11,6 +11,14 @@ import { CategoriesComponent } from './home/categories/categories.component';
 import { EventsComponent } from './events/events.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
+import { ModalComponent } from './shared/modal/modal.component';
+import { PurchaseGuideComponent } from './purchase-guide/purchase-guide.component';
+import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
+import { TermsOfServiceComponent } from './terms-of-service/terms-of-service.component';
+import { ApplyAsVendorComponent } from './apply-as-vendor/apply-as-vendor.component';
+import { AboutComponent } from './about/about.component';
+import { ContactComponent } from './contact/contact.component';
+import { MobileNavComponent } from './shared/navbar/mobile-nav/mobile-nav.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +30,15 @@ import { RegisterComponent } from './register/register.component';
     CategoriesComponent,
     EventsComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    ModalComponent,
+    PurchaseGuideComponent,
+    PrivacyPolicyComponent,
+    TermsOfServiceComponent,
+    ApplyAsVendorComponent,
+    AboutComponent,
+    ContactComponent,
+    MobileNavComponent
   ],
   imports: [
     BrowserModule,

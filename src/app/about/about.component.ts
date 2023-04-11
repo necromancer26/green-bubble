@@ -1,17 +1,14 @@
-import { Component, ElementRef, Inject, Renderer2 } from '@angular/core';
-// import * as $ from 'jquery';
+import { Component } from '@angular/core';
 import 'slick-carousel';
-
 declare var $: any;
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.sass'],
+  selector: 'app-about',
+  templateUrl: './about.component.html',
+  styleUrls: ['./about.component.sass'],
 })
-export class HomeComponent {
-  constructor(private renderer: Renderer2, private el: ElementRef) {}
-  ngOnInit(): void {
-    $('.carausel-4-columns').each(function (this: any, key: number, item: any) {
+export class AboutComponent {
+  ngOnInit() {
+    $('.carausel-3-columns').each(function (this: any, key: number, item: any) {
       var id = $(this).attr('id');
       var sliderID = '#' + id;
       var appendArrowsClassName = '#' + id + '-arrows';
@@ -22,7 +19,7 @@ export class HomeComponent {
         speed: 1000,
         arrows: true,
         autoplay: true,
-        slidesToShow: 4,
+        slidesToShow: 3,
         slidesToScroll: 1,
         loop: true,
         adaptiveHeight: true,
@@ -48,6 +45,6 @@ export class HomeComponent {
           '<span class="slider-btn slider-next"><i class="fi-rs-arrow-small-right"></i></span>',
         appendArrows: appendArrowsClassName,
       });
-    });
+    }); 
   }
 }
