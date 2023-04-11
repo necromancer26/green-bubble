@@ -9,8 +9,8 @@
                     <div class="header-info">
                         <ul>
                             <li><a routerLink="page-about.htlm">About Us</a></li>
-                            <li><a routerLink="page-account.html">My Account</a></li>
-                            <li><a routerLink="shop-wishlist.html">Wishlist</a></li>
+                            <li><a routerLink="/account">My Account</a></li>
+                            <li><a routerLink="/wishlist">Wishlist</a></li>
                             <li><a routerLink="shop-order.html">Order Tracking</a></li>
                         </ul>
                     </div>
@@ -70,7 +70,7 @@
         <div class="container">
             <div class="header-wrap">
                 <div class="logo logo-width-1">
-                    <a routerLink="index.html"><img src="assets/imgs/theme/logo.svg" alt="logo" /></a>
+                    <a routerLink="/"><img src="assets/imgs/theme/logo.svg" alt="logo" /></a>
                 </div>
                 <div class="header-right">
                     <div class="search-style-2">
@@ -114,25 +114,25 @@
                                 </form>
                             </div>
                             <div class="header-action-icon-2">
-                                <a routerLink="shop-compare.html">
+                                <a routerLink="/compare">
                                     <img class="svgInject" alt="Nest" src="assets/imgs/theme/icons/icon-compare.svg" />
                                     <span class="pro-count blue">3</span>
                                 </a>
-                                <a routerLink="shop-compare.html"><span class="lable ml-0">Compare</span></a>
+                                <a routerLink="/compare"><span class="lable ml-0">Compare</span></a>
                             </div>
                             <div class="header-action-icon-2">
-                                <a routerLink="shop-wishlist.html">
+                                <a routerLink="/wishlist">
                                     <img class="svgInject" alt="Nest" src="assets/imgs/theme/icons/icon-heart.svg" />
                                     <span class="pro-count blue">6</span>
                                 </a>
-                                <a routerLink="shop-wishlist.html"><span class="lable">Wishlist</span></a>
+                                <a routerLink="/wishlist"><span class="lable">Wishlist</span></a>
                             </div>
                             <div class="header-action-icon-2">
-                                <a class="mini-cart-icon" routerLink="shop-cart.html">
+                                <a class="mini-cart-icon" routerLink="/cart">
                                     <img alt="Nest" src="assets/imgs/theme/icons/icon-cart.svg" />
                                     <span class="pro-count blue">2</span>
                                 </a>
-                                <a routerLink="shop-cart.html"><span class="lable">Cart</span></a>
+                                <a routerLink="/cart"><span class="lable">Cart</span></a>
                                 <div class="cart-dropdown-wrap cart-dropdown-hm2">
                                     <ul>
                                         <li>
@@ -167,21 +167,21 @@
                                             <h4>Total <span>$4000.00</span></h4>
                                         </div>
                                         <div class="shopping-cart-button">
-                                            <a routerLink="shop-cart.html" class="outline">View cart</a>
-                                            <a routerLink="shop-checkout.html">Checkout</a>
+                                            <a routerLink="/cart" class="outline">View cart</a>
+                                            <a routerLink="/checkout">Checkout</a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="header-action-icon-2">
-                                <a routerLink="page-account.html">
+                                <a routerLink="/account">
                                     <img class="svgInject" alt="Nest" src="assets/imgs/theme/icons/icon-user.svg" />
                                 </a>
-                                <a routerLink="page-account.html"><span class="lable ml-0">Account</span></a>
+                                <a routerLink="/account"><span class="lable ml-0">Account</span></a>
                                 <div class="cart-dropdown-wrap cart-dropdown-hm2 account-dropdown">
                                     <ul>
                                         <li>
-                                            <a routerLink="page-account.html"><i class="fi fi-rs-user mr-10"></i>My
+                                            <a routerLink="/account"><i class="fi fi-rs-user mr-10"></i>My
                                                 Account</a>
                                         </li>
                                         <li>
@@ -303,50 +303,50 @@
                         <nav>
                             <ul>
                                 <li class="hot-deals"><img src="assets/imgs/theme/icons/icon-hot.svg"
-                                        alt="hot deals" /><a routerLink="shop-grid-right.html">Deals</a></li>
+                                        alt="hot deals" /><a routerLink="/deals">Deals</a></li>
 
                                 <li class="position-static">
-                                    <a routerLink="#">Shop <i class="fi-rs-angle-down"></i></a>
+                                    <a routerLink="/products">Shop <i class="fi-rs-angle-down"></i></a>
                                     <ul class="mega-menu">
                                         <li class="sub-mega-menu sub-mega-menu-width-22">
                                             <a class="menu-title" routerLink="#">Fruit & Vegetables</a>
                                             <ul>
-                                                <li><a routerLink="shop-product-right.html">Meat & Poultry</a></li>
-                                                <li><a routerLink="shop-product-right.html">Fresh Vegetables</a></li>
-                                                <li><a routerLink="shop-product-right.html">Herbs & Seasonings</a></li>
-                                                <li><a routerLink="shop-product-right.html">Cuts & Sprouts</a></li>
-                                                <li><a routerLink="shop-product-right.html">Exotic Fruits & Veggies</a>
+                                                <li><a routerLink="/products">Meat & Poultry</a></li>
+                                                <li><a routerLink="/products">Fresh Vegetables</a></li>
+                                                <li><a routerLink="/products">Herbs & Seasonings</a></li>
+                                                <li><a routerLink="/products">Cuts & Sprouts</a></li>
+                                                <li><a routerLink="/products">Exotic Fruits & Veggies</a>
                                                 </li>
-                                                <li><a routerLink="shop-product-right.html">Packaged Produce</a></li>
+                                                <li><a routerLink="/products">Packaged Produce</a></li>
                                             </ul>
                                         </li>
                                         <li class="sub-mega-menu sub-mega-menu-width-22">
                                             <a class="menu-title" routerLink="#">Breakfast & Dairy</a>
                                             <ul>
-                                                <li><a routerLink="shop-product-right.html">Milk & Flavoured Milk</a>
+                                                <li><a routerLink="/products">Milk & Flavoured Milk</a>
                                                 </li>
-                                                <li><a routerLink="shop-product-right.html">Butter and Margarine</a>
+                                                <li><a routerLink="/products">Butter and Margarine</a>
                                                 </li>
-                                                <li><a routerLink="shop-product-right.html">Eggs Substitutes</a></li>
-                                                <li><a routerLink="shop-product-right.html">Marmalades</a></li>
-                                                <li><a routerLink="shop-product-right.html">Sour Cream</a></li>
-                                                <li><a routerLink="shop-product-right.html">Cheese</a></li>
+                                                <li><a routerLink="/products">Eggs Substitutes</a></li>
+                                                <li><a routerLink="/products">Marmalades</a></li>
+                                                <li><a routerLink="/products">Sour Cream</a></li>
+                                                <li><a routerLink="/products">Cheese</a></li>
                                             </ul>
                                         </li>
                                         <li class="sub-mega-menu sub-mega-menu-width-22">
                                             <a class="menu-title" routerLink="#">Meat & Seafood</a>
                                             <ul>
-                                                <li><a routerLink="shop-product-right.html">Breakfast Sausage</a></li>
-                                                <li><a routerLink="shop-product-right.html">Dinner Sausage</a></li>
-                                                <li><a routerLink="shop-product-right.html">Chicken</a></li>
-                                                <li><a routerLink="shop-product-right.html">Sliced Deli Meat</a></li>
-                                                <li><a routerLink="shop-product-right.html">Wild Caught Fillets</a></li>
-                                                <li><a routerLink="shop-product-right.html">Crab and Shellfish</a></li>
+                                                <li><a routerLink="/products">Breakfast Sausage</a></li>
+                                                <li><a routerLink="/products">Dinner Sausage</a></li>
+                                                <li><a routerLink="/products">Chicken</a></li>
+                                                <li><a routerLink="/products">Sliced Deli Meat</a></li>
+                                                <li><a routerLink="/products">Wild Caught Fillets</a></li>
+                                                <li><a routerLink="/products">Crab and Shellfish</a></li>
                                             </ul>
                                         </li>
                                         <li class="sub-mega-menu sub-mega-menu-width-34">
                                             <div class="menu-banner-wrap">
-                                                <a routerLink="shop-product-right.html"><img
+                                                <a routerLink="/products"><img
                                                         src="assets/imgs/banner/banner-menu.png" alt="Nest" /></a>
                                                 <div class="menu-banner-content">
                                                     <h4>Hot deals</h4>
@@ -372,21 +372,17 @@
                                     </ul>
                                 </li>
                                 <li>
-                                    <a routerLink="#">Vendors <i class="fi-rs-angle-down"></i></a>
+                                    <a>Stores <i class="fi-rs-angle-down"></i></a>
                                     <ul class="sub-menu">
-                                        <li><a routerLink="vendors-list.html">Vendors List</a></li>
-                                        <li><a routerLink="vendor-details-1.html">Vendor Details</a></li>
-                                        <li><a routerLink="vendor-dashboard.html">Vendor Dashboard</a></li>
-                                        <li><a routerLink="vendor-guide.html">Vendor Guide</a></li>
+                                        <li><a routerLink="/stores">Our Vendors</a></li>
+                                        <li><a routerLink="/merchant-dashboard">Dashboard</a></li>
+                                        <li><a routerLink="/merchant-guide">Vendor Guide</a></li>
                                     </ul>
                                 </li>
                                 <li>
-                                    <a routerLink="blog-category-grid.html">Blog <i class="fi-rs-angle-down"></i></a>
+                                    <a routerLink="">Blog <i class="fi-rs-angle-down"></i></a>
                                     <ul class="sub-menu">
-                                        <li><a routerLink="blog-category-grid.html">Blog Category Grid</a></li>
-                                        <li><a routerLink="blog-category-list.html">Blog Category List</a></li>
-                                        <li><a routerLink="blog-category-big.html">Blog Category Big</a></li>
-                                        <li><a routerLink="blog-category-fullwidth.html">Blog Category Wide</a></li>
+                                        <li><a routerLink="/blog">Latest Articles</a></li>
                                         <li>
                                             <a routerLink="#">Single Post <i class="fi-rs-angle-right"></i></a>
                                             <ul class="level-menu level-menu-modify">
@@ -430,7 +426,7 @@
                 <div class="header-action-right d-block d-lg-none">
                     <div class="header-action-2">
                         <div class="header-action-icon-2">
-                            <a routerLink="shop-wishlist.html">
+                            <a routerLink="/wishlist">
                                 <img alt="Nest" src="assets/imgs/theme/icons/icon-heart.svg" />
                                 <span class="pro-count white">4</span>
                             </a>
@@ -474,8 +470,8 @@
                                         <h4>Total <span>$383.00</span></h4>
                                     </div>
                                     <div class="shopping-cart-button">
-                                        <a routerLink="shop-cart.html">View cart</a>
-                                        <a routerLink="shop-checkout.html">Checkout</a>
+                                        <a routerLink="/cart">View cart</a>
+                                        <a routerLink="/checkout">Checkout</a>
                                     </div>
                                 </div>
                             </div>

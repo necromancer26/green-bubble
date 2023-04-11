@@ -19,6 +19,18 @@ import { ApplyAsVendorComponent } from './apply-as-vendor/apply-as-vendor.compon
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { MobileNavComponent } from './shared/navbar/mobile-nav/mobile-nav.component';
+import { CartComponent } from './cart/cart.component';
+import { CheckoutComponent } from './checkout/checkout.component';
+import { WishlistComponent } from './wishlist/wishlist.component';
+import { CompareComponent } from './compare/compare.component';
+import { AccountComponent } from './account/account.component';
+import { NotFoundComponent } from './not-found/not-found.component';
+import { StoresComponent } from './stores/stores.component';
+import { MerchantGuideComponent } from './merchant-guide/merchant-guide.component';
+import { MerchantDashboardComponent } from './merchant-dashboard/merchant-dashboard.component';
+import { BlogComponent } from './blog/blog.component';
+import { ProductsComponent } from './products/products.component';
+import { ProductComponent } from './product/product.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +50,19 @@ import { MobileNavComponent } from './shared/navbar/mobile-nav/mobile-nav.compon
     ApplyAsVendorComponent,
     AboutComponent,
     ContactComponent,
-    MobileNavComponent
+    MobileNavComponent,
+    CartComponent,
+    CheckoutComponent,
+    WishlistComponent,
+    CompareComponent,
+    AccountComponent,
+    NotFoundComponent,
+    StoresComponent,
+    MerchantGuideComponent,
+    MerchantDashboardComponent,
+    BlogComponent,
+    ProductsComponent,
+    ProductComponent
   ],
   imports: [
     BrowserModule,

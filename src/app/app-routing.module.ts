@@ -9,6 +9,18 @@ import { TermsOfServiceComponent } from './terms-of-service/terms-of-service.com
 import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
+import { CartComponent } from './cart/cart.component';
+import { CheckoutComponent } from './checkout/checkout.component';
+import { WishlistComponent } from './wishlist/wishlist.component';
+import { CompareComponent } from './compare/compare.component';
+import { AccountComponent } from './account/account.component';
+import { NotFoundComponent } from './not-found/not-found.component';
+import { StoresComponent } from './stores/stores.component';
+import { MerchantGuideComponent } from './merchant-guide/merchant-guide.component';
+import { MerchantDashboardComponent } from './merchant-dashboard/merchant-dashboard.component';
+import { BlogComponent } from './blog/blog.component';
+import { ProductsComponent } from './products/products.component';
+import { ProductComponent } from './product/product.component';
 
 const routes: Routes = [
   {
@@ -24,6 +36,29 @@ const routes: Routes = [
   { path: 'apply-as-a-vendor', component: RegisterComponent },
   { path: 'about', component: AboutComponent },
   { path: 'contact', component: ContactComponent },
+  { path: 'cart', component: CartComponent },
+  { path: 'checkout', component: CheckoutComponent },
+  { path: 'wishlist', component: WishlistComponent },
+  { path: 'compare', component: CompareComponent },
+  { path: 'account', component: AccountComponent },
+  { path: 'stores', component: StoresComponent },
+  { path: 'merchant-dashboard', component: MerchantDashboardComponent },
+  { path: 'merchant-guide', component: MerchantGuideComponent },
+  { path: 'deals', component: ProductsComponent },
+  { path: 'blog', component: BlogComponent },
+  { path: 'products', component: ProductsComponent },
+  {
+    path: 'product',
+    component: ProductComponent,
+  },
+  {
+    path: '404',
+    component: NotFoundComponent,
+  },
+  {
+    path: '**',
+    redirectTo: '404',
+  },
 ];
 
 @NgModule({
