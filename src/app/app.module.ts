@@ -30,7 +30,11 @@ import { MerchantGuideComponent } from './merchant-guide/merchant-guide.componen
 import { MerchantDashboardComponent } from './merchant-dashboard/merchant-dashboard.component';
 import { BlogComponent } from './blog/blog.component';
 import { ProductsComponent } from './products/products.component';
-import { ProductComponent } from './product/product.component';
+import { ProductComponent } from './products/product/product.component';
+import { ArticleComponent } from './blog/article/article.component';
+import { ProductsFilterComponent } from './products-filter/products-filter.component';
+import { TicketComponent } from './ticket/ticket.component';
+import { StoreComponent } from './stores/store/store.component';
 
 @NgModule({
   declarations: [
@@ -62,7 +66,11 @@ import { ProductComponent } from './product/product.component';
     MerchantDashboardComponent,
     BlogComponent,
     ProductsComponent,
-    ProductComponent
+    ProductComponent,
+    ArticleComponent,
+    ProductsFilterComponent,
+    TicketComponent,
+    StoreComponent,
   ],
   imports: [
     BrowserModule,

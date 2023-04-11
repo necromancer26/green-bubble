@@ -209,11 +209,11 @@
         <div class="container">
             <div class="header-wrap header-space-between position-relative">
                 <div class="logo logo-width-1 d-block d-lg-none">
-                    <a routerLink="index.html"><img src="assets/imgs/theme/logo.svg" alt="logo" /></a>
+                    <a routerLink="/"><img src="assets/imgs/theme/logo.svg" alt="logo" /></a>
                 </div>
                 <div class="header-nav d-none d-lg-flex">
                     <div class="main-categori-wrap d-none d-lg-block">
-                        <a class="categories-button-active" routerLink="#">
+                        <a class="categories-button-active">
                             <span class="fi-rs-apps"></span> <span class="et">Browse</span> All Categories
                             <i class="fi-rs-angle-down"></i>
                         </a>
@@ -221,81 +221,82 @@
                             <div class="d-flex categori-dropdown-inner">
                                 <ul>
                                     <li>
-                                        <a routerLink="shop-grid-right.html"> <img
-                                                src="assets/imgs/theme/icons/category-1.svg" alt="" />Milks and
+                                        <a routerLink="/products"> <img src="assets/imgs/theme/icons/category-1.svg"
+                                                alt="" />Milks and
                                             Dairies</a>
                                     </li>
                                     <li>
-                                        <a routerLink="shop-grid-right.html"> <img
-                                                src="assets/imgs/theme/icons/category-2.svg" alt="" />Clothing &
+                                        <a routerLink="/products"> <img src="assets/imgs/theme/icons/category-2.svg"
+                                                alt="" />Clothing &
                                             beauty</a>
                                     </li>
                                     <li>
-                                        <a routerLink="shop-grid-right.html"> <img
-                                                src="assets/imgs/theme/icons/category-3.svg" alt="" />Pet Foods &
+                                        <a routerLink="/products"> <img src="assets/imgs/theme/icons/category-3.svg"
+                                                alt="" />Pet Foods &
                                             Toy</a>
                                     </li>
                                     <li>
-                                        <a routerLink="shop-grid-right.html"> <img
-                                                src="assets/imgs/theme/icons/category-4.svg" alt="" />Baking
+                                        <a routerLink="/products"> <img src="assets/imgs/theme/icons/category-4.svg"
+                                                alt="" />Baking
                                             material</a>
                                     </li>
                                     <li>
-                                        <a routerLink="shop-grid-right.html"> <img
-                                                src="assets/imgs/theme/icons/category-5.svg" alt="" />Fresh Fruit</a>
+                                        <a routerLink="/products"> <img src="assets/imgs/theme/icons/category-5.svg"
+                                                alt="" />Fresh Fruit</a>
                                     </li>
                                 </ul>
                                 <ul class="end">
                                     <li>
-                                        <a routerLink="shop-grid-right.html"> <img
-                                                src="assets/imgs/theme/icons/category-6.svg" alt="" />Wines & Drinks</a>
+                                        <a routerLink="/products"> <img src="assets/imgs/theme/icons/category-6.svg"
+                                                alt="" />Wines & Drinks</a>
                                     </li>
                                     <li>
-                                        <a routerLink="shop-grid-right.html"> <img
-                                                src="assets/imgs/theme/icons/category-7.svg" alt="" />Fresh Seafood</a>
+                                        <a routerLink="/products"> <img src="assets/imgs/theme/icons/category-7.svg"
+                                                alt="" />Fresh Seafood</a>
                                     </li>
                                     <li>
-                                        <a routerLink="shop-grid-right.html"> <img
-                                                src="assets/imgs/theme/icons/category-8.svg" alt="" />Fast food</a>
+                                        <a routerLink="/products"> <img src="assets/imgs/theme/icons/category-8.svg"
+                                                alt="" />Fast food</a>
                                     </li>
                                     <li>
-                                        <a routerLink="shop-grid-right.html"> <img
-                                                src="assets/imgs/theme/icons/category-9.svg" alt="" />Vegetables</a>
+                                        <a routerLink="/products"> <img src="assets/imgs/theme/icons/category-9.svg"
+                                                alt="" />Vegetables</a>
                                     </li>
                                     <li>
-                                        <a routerLink="shop-grid-right.html"> <img
-                                                src="assets/imgs/theme/icons/category-10.svg" alt="" />Bread and
+                                        <a routerLink="/products"> <img src="assets/imgs/theme/icons/category-10.svg"
+                                                alt="" />Bread and
                                             Juice</a>
                                     </li>
                                 </ul>
                             </div>
-                            <div class="more_slide_open" style="display: none">
+                            <div class="more_slide_open" [hidden]="!isMoreSlideOpen">
                                 <div class="d-flex categori-dropdown-inner">
                                     <ul>
                                         <li>
-                                            <a routerLink="shop-grid-right.html"> <img
-                                                    src="assets/imgs/theme/icons/icon-1.svg" alt="" />Milks and
+                                            <a routerLink="/products"> <img src="assets/imgs/theme/icons/icon-1.svg"
+                                                    alt="" />Milks and
                                                 Dairies</a>
                                         </li>
                                         <li>
-                                            <a routerLink="shop-grid-right.html"> <img
-                                                    src="assets/imgs/theme/icons/icon-2.svg" alt="" />Clothing &
+                                            <a routerLink="/products"> <img src="assets/imgs/theme/icons/icon-2.svg"
+                                                    alt="" />Clothing &
                                                 beauty</a>
                                         </li>
                                     </ul>
                                     <ul class="end">
                                         <li>
-                                            <a routerLink="shop-grid-right.html"> <img
-                                                    src="assets/imgs/theme/icons/icon-3.svg" alt="" />Wines & Drinks</a>
+                                            <a routerLink="/products"> <img src="assets/imgs/theme/icons/icon-3.svg"
+                                                    alt="" />Wines & Drinks</a>
                                         </li>
                                         <li>
-                                            <a routerLink="shop-grid-right.html"> <img
-                                                    src="assets/imgs/theme/icons/icon-4.svg" alt="" />Fresh Seafood</a>
+                                            <a routerLink="/products"> <img src="assets/imgs/theme/icons/icon-4.svg"
+                                                    alt="" />Fresh Seafood</a>
                                         </li>
                                     </ul>
                                 </div>
                             </div>
-                            <div class="more_categories"><span class="icon"></span> <span class="heading-sm-1">Show
+                            <div class="more_categories hover:cursor-pointer" (click)="toggleMoreSlide()"><span
+                                    class="icon"></span> <span class="heading-sm-1">Show
                                     more...</span></div>
                         </div>
                     </div>
@@ -306,10 +307,10 @@
                                         alt="hot deals" /><a routerLink="/deals">Deals</a></li>
 
                                 <li class="position-static">
-                                    <a routerLink="/products">Shop <i class="fi-rs-angle-down"></i></a>
+                                    <a routerLink="/filter">Shop <i class="fi-rs-angle-down"></i></a>
                                     <ul class="mega-menu">
                                         <li class="sub-mega-menu sub-mega-menu-width-22">
-                                            <a class="menu-title" routerLink="#">Fruit & Vegetables</a>
+                                            <a class="menu-title" routerLink="/products">Fruit & Vegetables</a>
                                             <ul>
                                                 <li><a routerLink="/products">Meat & Poultry</a></li>
                                                 <li><a routerLink="/products">Fresh Vegetables</a></li>
@@ -321,7 +322,7 @@
                                             </ul>
                                         </li>
                                         <li class="sub-mega-menu sub-mega-menu-width-22">
-                                            <a class="menu-title" routerLink="#">Breakfast & Dairy</a>
+                                            <a class="menu-title" routerLink="/products">Breakfast & Dairy</a>
                                             <ul>
                                                 <li><a routerLink="/products">Milk & Flavoured Milk</a>
                                                 </li>
@@ -334,7 +335,7 @@
                                             </ul>
                                         </li>
                                         <li class="sub-mega-menu sub-mega-menu-width-22">
-                                            <a class="menu-title" routerLink="#">Meat & Seafood</a>
+                                            <a class="menu-title" routerLink="/products">Meat & Seafood</a>
                                             <ul>
                                                 <li><a routerLink="/products">Breakfast Sausage</a></li>
                                                 <li><a routerLink="/products">Dinner Sausage</a></li>
@@ -346,8 +347,8 @@
                                         </li>
                                         <li class="sub-mega-menu sub-mega-menu-width-34">
                                             <div class="menu-banner-wrap">
-                                                <a routerLink="/products"><img
-                                                        src="assets/imgs/banner/banner-menu.png" alt="Nest" /></a>
+                                                <a routerLink="/products"><img src="assets/imgs/banner/banner-menu.png"
+                                                        alt="Nest" /></a>
                                                 <div class="menu-banner-content">
                                                     <h4>Hot deals</h4>
                                                     <h3>
@@ -383,12 +384,15 @@
                                     <a routerLink="">Blog <i class="fi-rs-angle-down"></i></a>
                                     <ul class="sub-menu">
                                         <li><a routerLink="/blog">Latest Articles</a></li>
+                                        <li><a routerLink="/blog">Create Article</a></li>
+                                        <li><a routerLink="/blog">Publisher Dashboard</a></li>
                                         <li>
-                                            <a routerLink="#">Single Post <i class="fi-rs-angle-right"></i></a>
+                                            <a>Articles by Category <i class="fi-rs-angle-right"></i></a>
                                             <ul class="level-menu level-menu-modify">
-                                                <li><a routerLink="blog-post-left.html">Left Sidebar</a></li>
-                                                <li><a routerLink="blog-post-right.html">Right Sidebar</a></li>
-                                                <li><a routerLink="blog-post-fullwidth.html">No Sidebar</a></li>
+                                                <li><a routerLink="/blog">Health</a></li>
+                                                <li><a routerLink="/blog">Lifestyle</a></li>
+                                                <li><a routerLink="/blog">Diet</a></li>
+                                                <li><a routerLink="/blog">More...</a></li>
                                             </ul>
                                         </li>
                                     </ul>
@@ -402,6 +406,7 @@
                                 <li>
                                     <a>More <i class="fi-rs-angle-down"></i></a>
                                     <ul class="sub-menu">
+                                        <li><a routerLink="/ticket">Open a Ticket</a></li>
                                         <li><a routerLink="/purchase-guide">Purchase Guide</a></li>
                                         <li><a routerLink="/privacy-policy">Privacy Policy</a></li>
                                         <li><a routerLink="/terms-of-service">Terms of Service</a></li>

@@ -20,7 +20,11 @@ import { MerchantGuideComponent } from './merchant-guide/merchant-guide.componen
 import { MerchantDashboardComponent } from './merchant-dashboard/merchant-dashboard.component';
 import { BlogComponent } from './blog/blog.component';
 import { ProductsComponent } from './products/products.component';
-import { ProductComponent } from './product/product.component';
+import { ProductComponent } from './products/product/product.component';
+import { ArticleComponent } from './blog/article/article.component';
+import { ProductsFilterComponent } from './products-filter/products-filter.component';
+import { TicketComponent } from './ticket/ticket.component';
+import { StoreComponent } from './stores/store/store.component';
 
 const routes: Routes = [
   {
@@ -41,12 +45,19 @@ const routes: Routes = [
   { path: 'wishlist', component: WishlistComponent },
   { path: 'compare', component: CompareComponent },
   { path: 'account', component: AccountComponent },
+  { path: 'vendor-stores', component: StoresComponent },
   { path: 'stores', component: StoresComponent },
+  { path: 'store', component: StoreComponent },
   { path: 'merchant-dashboard', component: MerchantDashboardComponent },
   { path: 'merchant-guide', component: MerchantGuideComponent },
   { path: 'deals', component: ProductsComponent },
   { path: 'blog', component: BlogComponent },
+  { path: 'article', component: ArticleComponent },
   { path: 'products', component: ProductsComponent },
+  { path: 'filter', component: ProductsFilterComponent },
+  { path: 'ticket', component: TicketComponent },
+
+
   {
     path: 'product',
     component: ProductComponent,
