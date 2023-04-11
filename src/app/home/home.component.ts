@@ -1,4 +1,4 @@
-import { Component, ElementRef, Inject, Renderer2 } from '@angular/core';
+import { Component } from '@angular/core';
 // import * as $ from 'jquery';
 import 'slick-carousel';
 
@@ -9,8 +9,8 @@ declare var $: any;
   styleUrls: ['./home.component.sass'],
 })
 export class HomeComponent {
-  constructor(private renderer: Renderer2, private el: ElementRef) {}
-  ngOnInit(): void {
+  ngOnInit() {
+    /*Carausel 4 columns*/
     $('.carausel-4-columns').each(function (this: any, key: number, item: any) {
       var id = $(this).attr('id');
       var sliderID = '#' + id;
@@ -49,5 +49,6 @@ export class HomeComponent {
         appendArrows: appendArrowsClassName,
       });
     });
+
   }
 }
