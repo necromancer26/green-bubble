@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import 'slick-carousel';
 declare var $: any;
 
 @Component({
@@ -10,7 +9,6 @@ declare var $: any;
 export class HeroComponent {
   HeroComponent() {}
   ngOnInit() {
-    console.log(`jQuery version: ${$.fn.jquery}`);
     /*------ Hero slider 1 ----*/
     $('.hero-slider-1').slick({
       slidesToShow: 1,

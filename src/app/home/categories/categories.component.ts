@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import 'slick-carousel';
 declare var $: any;
 
 @Component({
