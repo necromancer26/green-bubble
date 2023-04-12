@@ -35,6 +35,7 @@ import { ArticleComponent } from './blog/article/article.component';
 import { ProductsFilterComponent } from './products-filter/products-filter.component';
 import { TicketComponent } from './ticket/ticket.component';
 import { StoreComponent } from './stores/store/store.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -74,7 +75,8 @@ import { StoreComponent } from './stores/store/store.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
