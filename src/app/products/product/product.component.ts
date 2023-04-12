@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { Observable } from 'rxjs';
 import { ProductService } from './product.service';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Router } from '@angular/router';

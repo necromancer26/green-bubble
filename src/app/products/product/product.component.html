@@ -43,7 +43,7 @@
                                             </figure>
                                         </div>
                                         <!-- THUMBNAILS -->
-                                        <div class="slider-nav-thumbnails">
+                                        <!-- <div class="slider-nav-thumbnails">
                                             <div ><img src="assets/imgs/shop/thumbnail-3.jpg" alt="product image" />
                                             </div>
                                             <div><img src="assets/imgs/shop/thumbnail-4.jpg" alt="product image" />
@@ -58,7 +58,20 @@
                                             </div>
                                             <div><img src="assets/imgs/shop/thumbnail-9.jpg" alt="product image" />
                                             </div>
-                                        </div>
+                                        </div> -->
+    
+
+                                            <p-carousel [value]="product.imageUrls" styleClass="custom-carousel slider-nav-thumbnails"
+                                                [numVisible]="3" [numScroll]="1" [circular]="true"
+                                                [autoplayInterval]="0">
+                                                <ng-template let-image pTemplate="item">
+                                                    <div class="item card">
+                                                        <img src="{{image}}" class="card-img-top" alt="...">
+
+                                                    </div>
+                                                </ng-template>
+                                            </p-carousel>
+
                                     </div>
                                     <!-- End Gallery -->
                                 </div>

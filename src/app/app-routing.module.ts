@@ -59,7 +59,7 @@ const routes: Routes = [
 
 
   {
-    path: 'oneproduct',
+    path: 'product',
     component: ProductComponent,
   },
   {
